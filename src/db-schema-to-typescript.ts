@@ -262,12 +262,12 @@ export function convertASTToTypescript(ast: AST | AST[], formatOptions: Partial<
         if (typeTemplateList.length > 0)
           preDefineTypeTemplate = `<${preDefineTypeTemplateList.slice(0, typeTemplateList.length).join(', ')}>`;
 
-        let preDefineType = `type ${preDefineTypeName}${preDefineTypeTemplate} = ${tsType}${isNullableStr};`;
+        let preDefineType = `type ${preDefineTypeName}${preDefineTypeTemplate} = ${tsType};`;
 
         if (!preDefineTypes.includes(preDefineType))
           preDefineTypes.push(preDefineType);
 
-        columnLines.push(`${indentation}${columnNameFormat(columnName)}: ${preDefineTypeName}${typeTemplate};`);
+        columnLines.push(`${indentation}${columnNameFormat(columnName)}: ${preDefineTypeName}${typeTemplate}${isNullableStr};`);
       } else {
         columnLines.push(`${indentation}${columnNameFormat(columnName)}: ${tsType}${isNullableStr};`);
       }
