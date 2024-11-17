@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.textarea {
+    @apply flex min-h-[80px] w-full rounded-md px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.select {
+    @apply min-w-[8rem] rounded-md px-2 py-1;
+}

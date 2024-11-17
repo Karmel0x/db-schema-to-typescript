@@ -1,0 +1,72 @@
+<div class="container mx-auto">
+    <div class="mt-5">
+        <div class="flex gap-5">
+            <div class="flex-1">
+                <textarea class="textarea" id="input" rows="30"></textarea>
+            </div>
+            <div class="flex-1">
+                <textarea class="textarea" id="output" rows="30"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="flex gap-5 justify-around">
+            <div class="">
+                <div class="mt-4 flex gap-4">
+                    <img src="/typescript.svg" alt="typescript">
+                    <a href="https://github.com/Karmel0x/db-schema-to-typescript" target="_blank">
+                        <div class="border rounded-md py-1 px-2 flex gap-2">
+                            <img class="invert" src="/star.svg" alt="typescript">
+                            Github
+                        </div>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    Simple tool to convert database schema to typescript types
+                </div>
+            </div>
+            <div class="">
+                <a class="text-blue-500" href="https://www.npmjs.com/package/node-sql-parser#rocket-usage"
+                    target="_blank">Supported Database SQL Syntax</a>
+                <ul class="list-disc">
+                    <li>Athena</li>
+                    <li>BigQuery</li>
+                    <li>DB2</li>
+                    <li>Hive</li>
+                    <li>MariaDB</li>
+                    <li>MySQL</li>
+                    <li>PostgresQL</li>
+                    <li>Redshift</li>
+                    <li>Sqlite</li>
+                    <li>TransactSQL</li>
+                    <li>FlinkSQL</li>
+                    <li>Snowflake(alpha)</li>
+                    <li>Noql</li>
+                </ul>
+            </div>
+            <div class="">
+                <div class="mt-2">
+                    <label for="option-include-sql-types">include-sql-types</label>
+                    <select class="select" id="option-include-sql-types"></select>
+                </div>
+                <div class="mt-2">
+                    <label for="option-table-naming-format">table-naming-format</label>
+                    <select class="select" id="option-table-naming-format"></select>
+                </div>
+                <div class="mt-2">
+                    <label for="option-column-naming-format">column-naming-format</label>
+                    <select class="select" id="option-column-naming-format"></select>
+                </div>
+                <div class="mt-2">
+                    <label for="option-format-to">format-to</label>
+                    <select class="select" id="option-format-to"></select>
+                </div>
+                <div class="mt-2">
+                    <label for="option-include-default-values">include-default-values</label>
+                    <select class="select" id="option-include-default-values"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5"></div>
+</div>
