@@ -98,7 +98,7 @@ export type SampleTable = {
     date_column_1: Date | null;
     /**
      * DATETIME
-     * default: null
+     * default: CURRENT_TIMESTAMP
      */
     datetime_column_1: Date | null;
     /**

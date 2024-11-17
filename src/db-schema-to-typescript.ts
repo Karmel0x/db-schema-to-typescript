@@ -1,5 +1,5 @@
 
-import { Parser, ValueExpr, type AST } from 'node-sql-parser';
+import { Parser, ValueExpr, type AST, type Function } from 'node-sql-parser';
 
 
 export enum DbSchemaToTypescriptIncludeSqlTypes {
@@ -227,9 +227,24 @@ export function convertASTToTypescript(ast: AST | AST[], formatOptions: Partial<
       }
 
       if (includeDefaultValues === DbSchemaToTypescriptIncludeDefaultValues.Comment) {
-        const defaultVal = createDefinition.default_val?.value as ValueExpr<string> | undefined;
-        if (defaultVal?.value !== undefined) columnComments.push('default: ' + JSON.stringify(defaultVal.value));
-        else if (createDefinition.auto_increment) columnComments.push('default: ' + 'auto_increment');
+        if (createDefinition.auto_increment) {
+          columnComments.push('default: ' + 'auto_increment');
+        }
+        else {
+          const defaultVal = createDefinition.default_val?.value as any | undefined;
+          if (defaultVal) {
+            const defaultVal1 = defaultVal as Function;
+            const defaultValFunc = defaultVal1.name?.name?.[0];
+            if (defaultValFunc?.value !== undefined) {
+              columnComments.push('default: ' + defaultValFunc.value);
+            } else {
+              const defaultValExpr = defaultVal as ValueExpr<string>;
+              if (defaultValExpr.value !== undefined) {
+                columnComments.push('default: ' + JSON.stringify(defaultValExpr.value));
+              }
+            }
+          }
+        }
       }
 
       let comment = makeComment(columnComments, indentation);

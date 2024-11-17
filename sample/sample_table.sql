@@ -29,7 +29,7 @@ CREATE TABLE `sample_table`  (
   `varchar_column_1` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NULL DEFAULT NULL,
   `json_column_1` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL CHECK (json_valid(`json_column_1`)),
   `date_column_1` date NULL DEFAULT NULL,
-  `datetime_column_1` datetime NULL DEFAULT NULL,
+  `datetime_column_1` datetime NULL DEFAULT current_timestamp(),
   `time_column_1` time NULL DEFAULT NULL,
   `timestamp_column_1` timestamp NULL DEFAULT NULL,
   `year_column_1` year NULL DEFAULT NULL,

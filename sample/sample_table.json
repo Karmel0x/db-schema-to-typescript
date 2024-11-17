@@ -668,8 +668,20 @@
         "default_val": {
           "type": "default",
           "value": {
-            "type": "null",
-            "value": null
+            "type": "function",
+            "name": {
+              "name": [
+                {
+                  "type": "default",
+                  "value": "CURRENT_TIMESTAMP"
+                }
+              ]
+            },
+            "args": {
+              "type": "expr_list",
+              "value": []
+            },
+            "over": null
           }
         }
       },
@@ -1049,7 +1061,7 @@
       {
         "keyword": "comment",
         "symbol": "=",
-        "value": "'sample comment'"
+        "value": "'table comment 1'"
       },
       {
         "keyword": "row_format",

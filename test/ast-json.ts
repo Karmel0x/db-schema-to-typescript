@@ -1,6 +1,8 @@
 import fs from 'fs';
 import { Parser } from 'node-sql-parser';
 
+// bun test/ast-json.ts sample/sample_table.sql > sample/sample_table.json
+
 async function main() {
     const schemaFilename = process.argv[2];
     let schemaFile = await fs.promises.readFile(schemaFilename, 'utf8');
