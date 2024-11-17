@@ -1,0 +1,1061 @@
+[
+  {
+    "type": "drop",
+    "keyword": "table",
+    "prefix": "if exists",
+    "name": [
+      {
+        "db": null,
+        "table": "sample_table",
+        "as": null
+      }
+    ]
+  },
+  {
+    "type": "create",
+    "keyword": "table",
+    "temporary": null,
+    "if_not_exists": null,
+    "table": [
+      {
+        "db": null,
+        "table": "sample_table"
+      }
+    ],
+    "ignore_replace": null,
+    "as": null,
+    "query_expr": null,
+    "create_definitions": [
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "id"
+        },
+        "definition": {
+          "dataType": "INT",
+          "length": 10,
+          "scale": null,
+          "parentheses": true,
+          "suffix": [
+            "UNSIGNED"
+          ]
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "not null",
+          "value": "not null"
+        },
+        "auto_increment": "auto_increment"
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "sample_column1"
+        },
+        "definition": {
+          "dataType": "INT",
+          "length": 11,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        },
+        "comment": {
+          "type": "comment",
+          "keyword": "comment",
+          "symbol": null,
+          "value": {
+            "type": "single_quote_string",
+            "value": "column comment 1"
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "sample_column2"
+        },
+        "definition": {
+          "dataType": "VARCHAR",
+          "length": 255,
+          "parentheses": true,
+          "suffix": null
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "single_quote_string",
+            "value": "default value 1"
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "tinyint_column_1"
+        },
+        "definition": {
+          "dataType": "TINYINT",
+          "length": 4,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "smallint_column_1"
+        },
+        "definition": {
+          "dataType": "SMALLINT",
+          "length": 6,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "mediumint_column_1"
+        },
+        "definition": {
+          "dataType": "MEDIUMINT",
+          "length": 9,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "int_column_1"
+        },
+        "definition": {
+          "dataType": "INT",
+          "length": 11,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "bigint_column_1"
+        },
+        "definition": {
+          "dataType": "BIGINT",
+          "length": 20,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "decimal_column_1"
+        },
+        "definition": {
+          "dataType": "DECIMAL",
+          "length": 10,
+          "scale": 2,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "double_column_1"
+        },
+        "definition": {
+          "dataType": "DOUBLE",
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "float_column_1"
+        },
+        "definition": {
+          "dataType": "FLOAT",
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "tinytext_column_1"
+        },
+        "definition": {
+          "dataType": "TINYTEXT"
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "mediumtext_column_1"
+        },
+        "definition": {
+          "dataType": "MEDIUMTEXT"
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "text_column_1"
+        },
+        "definition": {
+          "dataType": "TEXT"
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "longtext_column_1"
+        },
+        "definition": {
+          "dataType": "LONGTEXT"
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "char_column_1"
+        },
+        "definition": {
+          "dataType": "CHAR",
+          "length": 1,
+          "parentheses": true,
+          "suffix": null
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "varchar_column_1"
+        },
+        "definition": {
+          "dataType": "VARCHAR",
+          "length": 255,
+          "parentheses": true,
+          "suffix": null
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb3"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb3_unicode_ci",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "json_column_1"
+        },
+        "definition": {
+          "dataType": "LONGTEXT"
+        },
+        "resource": "column",
+        "character_set": {
+          "type": "CHARACTER SET",
+          "value": {
+            "type": "default",
+            "value": "utf8mb4"
+          },
+          "symbol": null
+        },
+        "collate": {
+          "type": "collate",
+          "keyword": "collate",
+          "collate": {
+            "name": "utf8mb4_bin",
+            "symbol": null
+          }
+        },
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        },
+        "check": {
+          "constraint_type": "check",
+          "keyword": null,
+          "constraint": null,
+          "definition": [
+            {
+              "type": "function",
+              "name": {
+                "name": [
+                  {
+                    "type": "default",
+                    "value": "json_valid"
+                  }
+                ]
+              },
+              "args": {
+                "type": "expr_list",
+                "value": [
+                  {
+                    "type": "column_ref",
+                    "table": null,
+                    "column": "json_column_1"
+                  }
+                ]
+              },
+              "over": null
+            }
+          ],
+          "enforced": "",
+          "resource": "constraint"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "date_column_1"
+        },
+        "definition": {
+          "dataType": "DATE"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "datetime_column_1"
+        },
+        "definition": {
+          "dataType": "DATETIME"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "time_column_1"
+        },
+        "definition": {
+          "dataType": "TIME"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "timestamp_column_1"
+        },
+        "definition": {
+          "dataType": "TIMESTAMP"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "year_column_1"
+        },
+        "definition": {
+          "dataType": "YEAR"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "bit_column_1"
+        },
+        "definition": {
+          "dataType": "BIT",
+          "length": 1,
+          "scale": null,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "binary_column_1"
+        },
+        "definition": {
+          "dataType": "BINARY",
+          "length": 1,
+          "parentheses": true,
+          "suffix": []
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "tinyblob_column_1"
+        },
+        "definition": {
+          "dataType": "TINYBLOB"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "mediumblob_column_1"
+        },
+        "definition": {
+          "dataType": "MEDIUMBLOB"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "blob_column_1"
+        },
+        "definition": {
+          "dataType": "BLOB"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "longblob_column_1"
+        },
+        "definition": {
+          "dataType": "LONGBLOB"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        },
+        "default_val": {
+          "type": "default",
+          "value": {
+            "type": "null",
+            "value": null
+          }
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "point_column_1"
+        },
+        "definition": {
+          "dataType": "POINT"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "multipoint_column_1"
+        },
+        "definition": {
+          "dataType": "MULTIPOINT"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "linestring_column_1"
+        },
+        "definition": {
+          "dataType": "LINESTRING"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "multilinestring_column_1"
+        },
+        "definition": {
+          "dataType": "MULTILINESTRING"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "polygon_column_1"
+        },
+        "definition": {
+          "dataType": "POLYGON"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "multipolygon_column_1"
+        },
+        "definition": {
+          "dataType": "MULTIPOLYGON"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "geometry_column_1"
+        },
+        "definition": {
+          "dataType": "GEOMETRY"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "column": {
+          "type": "column_ref",
+          "table": null,
+          "column": "geometrycollection_column_1"
+        },
+        "definition": {
+          "dataType": "GEOMETRYCOLLECTION"
+        },
+        "resource": "column",
+        "nullable": {
+          "type": "null",
+          "value": "null"
+        }
+      },
+      {
+        "constraint": null,
+        "definition": [
+          {
+            "type": "column_ref",
+            "column": "id",
+            "order_by": null
+          }
+        ],
+        "constraint_type": "primary key",
+        "keyword": null,
+        "index_type": null,
+        "resource": "constraint",
+        "index_options": [
+          {
+            "keyword": "using",
+            "type": "btree"
+          }
+        ]
+      }
+    ],
+    "table_options": [
+      {
+        "keyword": "engine",
+        "symbol": "=",
+        "value": "INNODB"
+      },
+      {
+        "keyword": "auto_increment",
+        "symbol": "=",
+        "value": 1
+      },
+      {
+        "keyword": "character set",
+        "symbol": "=",
+        "value": {
+          "type": "default",
+          "value": "utf8mb3"
+        }
+      },
+      {
+        "keyword": "collate",
+        "symbol": "=",
+        "value": {
+          "type": "default",
+          "value": "utf8mb3_unicode_ci"
+        }
+      },
+      {
+        "keyword": "comment",
+        "symbol": "=",
+        "value": "'sample comment'"
+      },
+      {
+        "keyword": "row_format",
+        "symbol": "=",
+        "value": "DYNAMIC"
+      }
+    ]
+  }
+]
