@@ -84,10 +84,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         <div class="flex gap-5 justify-around">\r
             <div class="">\r
                 <div class="mt-4 flex gap-4">\r
-                    <img src="/typescript.svg" alt="typescript">\r
+                    <img src="./typescript.svg" alt="typescript">\r
                     <a href="https://github.com/Karmel0x/db-schema-to-typescript" target="_blank">\r
                         <div class="border rounded-md py-1 px-2 flex gap-2">\r
-                            <img class="invert" src="/star.svg" alt="typescript">\r
+                            <img class="invert" src="./star.svg" alt="star">\r
                             Github\r
                         </div>\r
                     </a>\r
