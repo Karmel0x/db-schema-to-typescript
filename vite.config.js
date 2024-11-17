@@ -3,4 +3,5 @@ export default {
         outDir: './docs',
         emptyOutDir: true,
     },
+    base: "./",
 };
